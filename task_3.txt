@@ -1,0 +1,12 @@
+Task_3
+
+
+class Student:
+    def __init__(self name="", student_id="", course="", section=""):
+        self.name = name
+        self.id = student_id
+        self.course = course
+        self.section = section
+
+# Creating an instance of the Student class with my information
+myself = Student(name="Dwip Das", student_id="42230200832", course="ECSE", section="2D")

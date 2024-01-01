@@ -1,0 +1,23 @@
+Task_4
+
+
+class Student:
+    def __init__(self, name, student_id, course, section):
+        self.name = name
+        self.id = student_id
+        self.course = course
+        self.section = section
+
+# Creating an object of the Student class with my information
+my_name = "Dwip Das"
+my_id = "42230200832"
+my_course = "ECSE"
+my_section = "2D"
+
+my information = Student(my_name, my_id, my_course, my_section)
+
+# Accessing and printing the object's properties
+print("Student Name:", my_student.name)
+print("Student ID:", my_student.id)
+print("Course:", my_student.course)
+print("Section:", my_student.section)

@@ -1,0 +1,43 @@
+Task_1
+
+
+class Rectangle:
+    def __init__(self, length=0, width=0, height=0):
+        self.length = length
+        self.width = width
+        self.height = height
+
+    def calculate_area(self):
+        return self.length * self.width
+
+    def calculate_volume(self):
+        return self.height * self.width * self.length
+
+
+# User Input
+length_user = float(input("Enter the length of the rectangle: "))
+width_user = float(input("Enter the width of the rectangle: "))
+height_user = float(input("Enter the height of the rectangle: "))
+
+rectangle_user = Rectangle(length_user, width_user, height_user)
+
+print("User Input - Area:", rectangle_user.calculate_area())
+print("User Input - Volume:", rectangle_user.calculate_volume())
+print()
+
+# Default Constructor
+rectangle_default = Rectangle()
+
+print("Default Constructor - Area:", rectangle_default.calculate_area())
+print("Default Constructor - Volume:", rectangle_default.calculate_volume())
+print()
+
+# Parameterized Constructor
+length_param = 5.0
+width_param = 3.0
+height_param = 2.0
+
+rectangle_param = Rectangle(length_param, width_param, height_param)
+
+print("Parameterized Constructor - Area:", rectangle_param.calculate_area())
+print("Parameterized Constructor - Volume:", rectangle_param.calculate_volume())

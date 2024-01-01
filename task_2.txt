@@ -1,0 +1,56 @@
+Task_2
+
+#include <iostream>
+#include <string>
+
+class Employee {
+private:
+    std::string name;
+    double salary;
+
+public:
+    // Setter function for name
+    void setName(const std::string& newName) {
+        name = newName;
+    }
+
+    // Getter function for name
+    std::string getName() const {
+        return name;
+    }
+
+    // Setter function for salary
+    void setSalary(double newSalary) {
+        salary = newSalary;
+    }
+
+    // Getter function for salary
+    double getSalary() const {
+        return salary;
+    }
+
+    // Function to calculate yearly salary
+    double yearlySalary() const {
+        // Assuming salary is monthly, multiply by 12 for yearly salary
+        return salary * 12;
+    }
+};
+
+int main() {
+    // Create an object of the Employee class
+    Employee emp;
+
+    // Set values using setter functions
+    emp.setName("John Doe");
+    emp.setSalary(5000.0); // Assuming monthly salary
+
+    // Access values using getter functions
+    std::string empName = emp.getName();
+    double empYearlySalary = emp.yearlySalary();
+
+    // Display the information
+    std::cout << "Employee Name: " << empName << std::endl;
+    std::cout << "Yearly Salary: $" << empYearlySalary << std::endl;
+
+    return 0;
+}
